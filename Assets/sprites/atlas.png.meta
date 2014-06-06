@@ -49,8 +49,8 @@ TextureImporter:
         y: 512
         width: 288
         height: 512
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bg_night
       rect:
@@ -59,8 +59,8 @@ TextureImporter:
         y: 512
         width: 288
         height: 512
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: land
       rect:
@@ -69,8 +69,8 @@ TextureImporter:
         y: 912
         width: 336
         height: 112
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: atlas_3
       rect:
@@ -262,25 +262,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_49
+    - name: pipe_up
       rect:
         serializedVersion: 2
         x: 112
         y: 58
         width: 52
         height: 320
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_50
+    - name: pipe_down
       rect:
         serializedVersion: 2
         x: 168
         y: 58
         width: 52
         height: 320
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 2
+      pivot: {x: .5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: bird2
       rect:
