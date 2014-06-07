@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PipeSpawner.cs">
     <Files>
-      <File FileName="Assets\scripts\PipeMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Spawner.cs" Line="24" Column="24" />
-      <File FileName="..\UnityPlatformer\Assets\Scripts\Rocket.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\LandTrigger.cs" Line="16" Column="1" />
+      <File FileName="Assets\scripts\BirdControl.cs" Line="43" Column="82" />
+      <File FileName="Assets\scripts\PipeMove.cs" Line="17" Column="4" />
+      <File FileName="Assets\scripts\PipeSpawner.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

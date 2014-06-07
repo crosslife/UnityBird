@@ -18,4 +18,10 @@ public class PipeMove : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
+	public void GameOver()
+	{
+		Rigidbody2D body = transform.GetComponent<Rigidbody2D>();
+		body.velocity = new Vector2(0, 0);
+	}
 }

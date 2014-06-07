@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\BirdControl.cs" />
+     <Compile Include="Assets\scripts\LandTrigger.cs" />
      <Compile Include="Assets\scripts\PipeMove.cs" />
-     <Compile Include="Assets\scripts\Spawner.cs" />
+     <Compile Include="Assets\scripts\PipeSpawner.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
