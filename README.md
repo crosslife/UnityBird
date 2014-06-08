@@ -1,4 +1,4 @@
 UnityBird
 =========
 
-Flappy Bird maked by Unity3D
+Flappy Bird made by Unity3D
