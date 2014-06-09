@@ -8,9 +8,11 @@ public class BirdControl : MonoBehaviour {
 
 	private bool dead = false;
 	private bool landed = false;
+
+	private Animator anim;
 	// Use this for initialization
 	void Start () {
-	
+		anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -48,7 +50,8 @@ public class BirdControl : MonoBehaviour {
 				g.BroadcastMessage("GameOver");
 			}
 
-			transform.GetComponent<Animator>().enabled = false;
+			//transform.GetComponent<Animator>().enabled = false;
+			anim.SetTrigger("die");
 
 			if (other.name == "land")
 			{
