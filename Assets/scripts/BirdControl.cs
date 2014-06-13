@@ -5,6 +5,7 @@ public class BirdControl : MonoBehaviour {
 
 	public int rotateRate = 10;
 	public float upSpeed = 10;
+    public GameObject scoreMgr;
 
 	private bool dead = false;
 	private bool landed = false;
@@ -60,6 +61,11 @@ public class BirdControl : MonoBehaviour {
 				landed = true;
 			}
 		}
+
+        if (other.name == "pass_trigger")
+        {
+            scoreMgr.GetComponent<ScoreMgr>().AddScore();
+        }
 
 
 	}
