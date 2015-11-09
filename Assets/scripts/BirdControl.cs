@@ -22,13 +22,13 @@ public class BirdControl : MonoBehaviour {
 		{
 			if (Input.GetButtonDown("Fire1"))
 			{
-				transform.rigidbody2D.velocity = new Vector2(0, upSpeed);
+				transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0, upSpeed);
 			}
 		}
 
 		if (!landed)
 		{
-			float v = transform.rigidbody2D.velocity.y;
+			float v = transform.GetComponent<Rigidbody2D>().velocity.y;
 			
 			float rotate = Mathf.Min(Mathf.Max(-90, v * rotateRate + 60), 30);
 			
@@ -36,7 +36,7 @@ public class BirdControl : MonoBehaviour {
 		}
 		else
 		{
-			transform.rigidbody2D.rotation = -90;
+			transform.GetComponent<Rigidbody2D>().rotation = -90;
 		}
 	}
 
@@ -55,8 +55,8 @@ public class BirdControl : MonoBehaviour {
 
 			if (other.name == "land")
 			{
-				transform.rigidbody2D.gravityScale = 0;
-				transform.rigidbody2D.velocity = new Vector2(0, 0);
+				transform.GetComponent<Rigidbody2D>().gravityScale = 0;
+				transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
 				landed = true;
 			}
