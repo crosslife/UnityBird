@@ -1,6 +1,57 @@
 fileFormatVersion: 2
 guid: 68fbc44b58bf307458061805fd55fbb2
+timeCreated: 1447505521
+licenseType: Pro
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bg_day
+    21300002: bg_night
+    21300004: land
+    21300006: rate_btn
+    21300008: ready_pic
+    21300010: gameover_pic
+    21300012: score0
+    21300014: logo_pic
+    21300016: atlas_17
+    21300018: start_btn
+    21300020: rank_btn
+    21300022: score2
+    21300024: score3
+    21300026: score4
+    21300028: score5
+    21300030: score6
+    21300032: score7
+    21300034: score8
+    21300036: score9
+    21300038: atlas_42
+    21300040: atlas_43
+    21300042: atlas_44
+    21300044: pipe_up
+    21300046: pipe_down
+    21300048: bird2
+    21300050: atlas_52
+    21300052: atlas_53
+    21300054: bird3
+    21300056: atlas_55
+    21300058: atlas_56
+    21300060: atlas_58
+    21300062: atlas_59
+    21300064: atlas_60
+    21300066: atlas_62
+    21300068: atlas_63
+    21300070: atlas_64
+    21300072: atlas_65
+    21300074: atlas_66
+    21300076: atlas_67
+    21300078: atlas_68
+    21300080: score1
+    21300082: atlas_70
+    21300084: atlas_72
+    21300086: atlas_73
+    21300088: atlas_74
+    21300090: bird1
+    21300092: tip_pic
+    21300094: black
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -19,6 +70,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -29,7 +83,9 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -72,17 +128,17 @@ TextureImporter:
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_3
+    - name: rate_btn
       rect:
         serializedVersion: 2
-        x: 924
-        y: 976
-        width: 74
-        height: 48
+        x: 930
+        y: 986
+        width: 62
+        height: 36
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_10
+    - name: ready_pic
       rect:
         serializedVersion: 2
         x: 584
@@ -92,7 +148,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_11
+    - name: gameover_pic
       rect:
         serializedVersion: 2
         x: 784
@@ -112,7 +168,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_15
+    - name: logo_pic
       rect:
         serializedVersion: 2
         x: 702
@@ -132,23 +188,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_26
+    - name: start_btn
       rect:
         serializedVersion: 2
-        x: 702
-        y: 720
-        width: 116
-        height: 70
+        x: 708
+        y: 730
+        width: 104
+        height: 58
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_27
+    - name: rank_btn
       rect:
         serializedVersion: 2
-        x: 822
-        y: 720
-        width: 116
-        height: 70
+        x: 828
+        y: 730
+        width: 104
+        height: 58
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,7 +558,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_71
+    - name: tip_pic
       rect:
         serializedVersion: 2
         x: 584
@@ -524,3 +580,5 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
