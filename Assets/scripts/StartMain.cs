@@ -12,26 +12,7 @@ public class StartMain : MonoBehaviour {
     private GameObject nowPressBtn = null;
 
     // Use this for initialization
-    void Start () {
-
-        // bird fly up down
-        float birdOffset = 0.05f;
-        float birdTime = 0.3f;
-        float birdStartY = bird.transform.position.y;
-
-        Sequence birdSequence = DOTween.Sequence();
-
-        birdSequence.Append(bird.transform.DOMoveY(birdStartY + birdOffset, birdTime).SetEase(Ease.Linear))
-            .Append(bird.transform.DOMoveY(birdStartY - 2 * birdOffset, 2 * birdTime).SetEase(Ease.Linear))
-            .Append(bird.transform.DOMoveY(birdStartY, birdTime).SetEase(Ease.Linear))
-            .SetLoops(-1);
-
-        // land continue moving
-        Sequence landSequence = DOTween.Sequence();
-
-        landSequence.Append(land.transform.DOMoveX(land.transform.position.x - 0.48f, 0.5f).SetEase(Ease.Linear))
-            .Append(land.transform.DOMoveX(land.transform.position.x, 0f).SetEase(Ease.Linear))
-            .SetLoops(-1);
+    void Start () {      
 
         // random background
         int index = Random.Range(0, back_list.Length);

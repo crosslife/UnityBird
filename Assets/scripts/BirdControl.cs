@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class BirdControl : MonoBehaviour {
 
@@ -7,22 +8,43 @@ public class BirdControl : MonoBehaviour {
 	public float upSpeed = 10;
     public GameObject scoreMgr;
 
+    public AudioClip jumpUp;
+    public AudioClip hit;
+
+    public bool inGame = false;
+
 	private bool dead = false;
 	private bool landed = false;
 
-	private Animator anim;
-	// Use this for initialization
-	void Start () {
-		anim = GetComponent<Animator>();
-	}
+    private Sequence birdSequence;
+
+    // Use this for initialization
+    void Start () {
+        float birdOffset = 0.05f;
+        float birdTime = 0.3f;
+        float birdStartY = transform.position.y;
+
+        birdSequence = DOTween.Sequence();
+
+        birdSequence.Append(transform.DOMoveY(birdStartY + birdOffset, birdTime).SetEase(Ease.Linear))
+            .Append(transform.DOMoveY(birdStartY - 2 * birdOffset, 2 * birdTime).SetEase(Ease.Linear))
+            .Append(transform.DOMoveY(birdStartY, birdTime).SetEase(Ease.Linear))
+            .SetLoops(-1);
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        if (!inGame)
+        {
+            return;
+        }
+        birdSequence.Kill();
+
 		if (!dead)
 		{
 			if (Input.GetButtonDown("Fire1"))
 			{
-				transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0, upSpeed);
+                JumpUp();
 			}
 		}
 
@@ -44,14 +66,19 @@ public class BirdControl : MonoBehaviour {
 	{
 		if (other.name == "land" || other.name == "pipe_up" || other.name == "pipe_down")
 		{
-			GameObject[] objs = GameObject.FindGameObjectsWithTag("movable");
-			foreach(GameObject g in objs)
-			{
-				g.BroadcastMessage("GameOver");
-			}
+            if (!dead)
+            {
+                GameObject[] objs = GameObject.FindGameObjectsWithTag("movable");
+                foreach (GameObject g in objs)
+                {
+                    g.BroadcastMessage("GameOver");
+                }
 
-			//transform.GetComponent<Animator>().enabled = false;
-			anim.SetTrigger("die");
+                GetComponent<Animator>().SetTrigger("die");
+                AudioSource.PlayClipAtPoint(hit, Vector3.zero);
+            }
+
+			
 
 			if (other.name == "land")
 			{
@@ -69,6 +96,12 @@ public class BirdControl : MonoBehaviour {
 
 
 	}
+
+    public void JumpUp()
+    {
+        transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0, upSpeed);
+        AudioSource.PlayClipAtPoint(jumpUp, Vector3.zero);
+    }
 	
 	public void GameOver()
 	{

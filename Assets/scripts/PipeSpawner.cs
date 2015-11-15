@@ -11,9 +11,13 @@ public class PipeSpawner : MonoBehaviour {
 	
 	void Start ()
 	{
-		// Start calling the Spawn function repeatedly after a delay .
-		InvokeRepeating("Spawn", spawnDelay, spawnTime);
+		// Start calling the Spawn function repeatedly after a delay .		
 	}
+
+    public void StartSpawning()
+    {
+        InvokeRepeating("Spawn", spawnDelay, spawnTime);
+    }
 	
 	
 	void Spawn ()

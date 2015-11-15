@@ -1,8 +1,14 @@
 fileFormatVersion: 2
 guid: a4e0978ef5b5b17499f54d9c62c22930
+timeCreated: 1447598960
+licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreMgr: {instanceID: 0}
+  - sfx_swing: {fileID: 8300000, guid: 96f29ae1ccdda6e4fa1de685a27ce361, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
