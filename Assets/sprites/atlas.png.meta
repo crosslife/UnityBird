@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 68fbc44b58bf307458061805fd55fbb2
-timeCreated: 1447505521
+timeCreated: 1447683154
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -23,7 +23,7 @@ TextureImporter:
     21300032: score7
     21300034: score8
     21300036: score9
-    21300038: atlas_42
+    21300038: score_board
     21300040: atlas_43
     21300042: atlas_44
     21300044: pipe_up
@@ -52,6 +52,8 @@ TextureImporter:
     21300090: bird1
     21300092: tip_pic
     21300094: black
+    21300096: mscore0
+    21300098: mscore1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -288,13 +290,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: atlas_42
+    - name: score_board
       rect:
         serializedVersion: 2
-        x: 0
-        y: 382
-        width: 238
-        height: 126
+        x: 6
+        y: 392
+        width: 226
+        height: 114
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,6 +577,26 @@ TextureImporter:
         y: 580
         width: 32
         height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mscore0
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 392
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mscore1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 50
+        width: 11
+        height: 21
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

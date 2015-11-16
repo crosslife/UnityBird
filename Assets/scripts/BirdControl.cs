@@ -10,6 +10,7 @@ public class BirdControl : MonoBehaviour {
 
     public AudioClip jumpUp;
     public AudioClip hit;
+    public AudioClip score;
 
     public bool inGame = false;
 
@@ -92,6 +93,7 @@ public class BirdControl : MonoBehaviour {
         if (other.name == "pass_trigger")
         {
             scoreMgr.GetComponent<ScoreMgr>().AddScore();
+            AudioSource.PlayClipAtPoint(score, Vector3.zero);
         }
 
 
