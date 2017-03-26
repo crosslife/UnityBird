@@ -1,8 +1,7 @@
 UnityBird
 =========
 
-2015年11月14日
-今天又开始填这个坑，练手Unity。
+Flappy Bird made with Unity
 
 Latest gif
 
